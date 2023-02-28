@@ -23,9 +23,9 @@ def find_jobs():
             job_link = job.header.h2.a['href']
             if familiar_skill in skills:
                 with open(f'posts/{index}.txt', 'w') as f:
-                    f.write(f"Company Name: {company_name.strip()}")
-                    f.write(f"Required Skills: {skills.strip()}")
-                    f.write(f"More info: {job_link}")
+                    f.write(f"Company Name: {company_name.strip()}\n")
+                    f.write(f"Required Skills: {skills.strip()}\n")
+                    f.write(f"More info: {job_link}\n")
                 print('File saved: {index}')
 
 
